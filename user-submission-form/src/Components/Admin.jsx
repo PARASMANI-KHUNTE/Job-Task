@@ -15,7 +15,7 @@ const Admin = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post("http://localhost:5000/api/admin/admin-login", formData); // Send formData directly
+        const response = await axios.post("https://job-task-server-fgcv.onrender.com/api/admin/admin-login", formData); // Send formData directly
         const { token } = response.data;
     
         // Store token in localStorage or cookie
