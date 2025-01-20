@@ -1,0 +1,23 @@
+# Node.js modules
+node_modules/
+
+# Environment variables
+.env
+
+# Service account files
+*.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
