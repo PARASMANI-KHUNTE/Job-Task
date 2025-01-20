@@ -20,7 +20,7 @@ const Dashboard = () => {
   const validateToken = async (token) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/verifyToken",
+        "https://job-task-server-fgcv.onrender.com/api/admin/verifyToken",
         { token }
       );
       return response.status === 200;
@@ -32,7 +32,7 @@ const Dashboard = () => {
   // Fetch data function
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/form/get-formData");
+      const response = await axios.get("https://job-task-server-fgcv.onrender.com/api/form/get-formData");
       setData(response.data);
     } catch (error) {
         toast.error("Error fetching data:", error);
