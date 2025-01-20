@@ -31,7 +31,7 @@ const Form = () => {
         formDataToSend.append("images", image);
       });
 
-      const response = await axios.post("http://localhost:5000/api/form/upload-formData", formDataToSend, {
+      const response = await axios.post("https://job-task-server-fgcv.onrender.com/api/form/upload-formData", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
