@@ -25,7 +25,10 @@ mongoose
 // Routes
 app.use("/api/admin", adminRoutes);
 app.use("/api/form", formDataRoutes);
-// app.use('/api/googleCloud',googleCloud);
+app.get('/test', (req, res) => {
+  res.status(200).send('Server is up.');
+});
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
