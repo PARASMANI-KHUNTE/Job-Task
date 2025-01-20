@@ -13,7 +13,7 @@ const PORT = process.env.port;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-    origin : "http://localhost:5173"
+    origin : "https://job-task-7dd6.onrender.com"
 }))
 
 // MongoDB Connection
