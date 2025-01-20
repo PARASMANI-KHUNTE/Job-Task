@@ -1,5 +1,5 @@
 const admin = require("firebase-admin");
-const firebaseConfig = require("./firebaseConfig.json");
+const firebaseConfig = require("./etc/secrets/firebaseConfig.json");
 const dotenv = require('dotenv')
 dotenv.config()
 admin.initializeApp({
