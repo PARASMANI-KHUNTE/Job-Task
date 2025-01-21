@@ -22,7 +22,7 @@ const Admin = () => {
         localStorage.setItem("adminToken", token);
     
         toast.success("Login successful!");
-        navigate('/Dashboard')
+        navigate('/dashboard')
       } catch (error) {
         console.error("Login error:", error.response?.data?.error || error.message);
         toast.error(error.response?.data?.error || "Login failed!");
