@@ -8,8 +8,8 @@ const Navbar = () => {
             <h1>Collector</h1>
         </div>
         <ul className="flex gap-4 ">
-            <li><Link className=" hover:text-purple-800    text-purple-600" to="/">Form</Link></li>
-            <li><Link className=" hover:text-purple-800    text-purple-600" to="/Admin">Admin</Link></li>
+            <li><Link className=" hover:text-purple-800    text-purple-600" to="/form">Form</Link></li>
+            <li><Link className=" hover:text-purple-800    text-purple-600" to="/admin">Admin</Link></li>
         </ul>
     </nav>
     </>
